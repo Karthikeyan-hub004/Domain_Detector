@@ -31,31 +31,9 @@ const PORT = process.env.PORT || 5000;
 console.log("Express app created.");
 
 // --------------------
-// CORS
+// CORS (temporary - allows all origins)
 // --------------------
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://dogsk.onrender.com",
-  "https://dk2004.onrender.com",
-  "https://dk-lsdr.onrender.com",
-  process.env.FRONTEND_URL,
-].filter(Boolean);
-
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        console.log("Request from origin:", origin);
-        callback(null, true); // allow for demo
-      }
-    },
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
