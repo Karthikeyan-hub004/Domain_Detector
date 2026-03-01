@@ -37,6 +37,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "https://dogsk.onrender.com",
   "https://dk2004.onrender.com",
+  "https://dk-lsdr.onrender.com",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
