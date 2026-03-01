@@ -35,8 +35,8 @@ console.log("Express app created.");
 // --------------------
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://dk2004.onrender.com/chat",
-  ,
+  "https://dogsk.onrender.com",
+  "https://dk2004.onrender.com",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
