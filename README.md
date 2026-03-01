@@ -81,7 +81,7 @@ Create websites and web applications for the internet.
 - [JavaScript (Cisco NetAcad)](https://www.netacad.com/learning-collections/javascript?courseLang=en-US)
 
 **Resources:**
-- **YouTube:** [Code io – Tamil](https://www.youtube.com/watch?v=3jkub2c0kLA&list=PLhP5RsB7fhE2lGbXCw35H5opjIAksz2q5)
+- **YouTube:** [code io - Tamil](https://www.youtube.com/watch?v=3jkub2c0kLA&list=PLhP5RsB7fhE2lGbXCw35H5opjIAksz2q5)
 - **Websites:**
   - [freeCodeCamp](https://www.freecodecamp.org/)
   - [W3Schools](https://www.w3schools.com/)
@@ -122,7 +122,7 @@ Build applications for Android and iOS devices.
 - [JavaScript (Cisco NetAcad)](https://www.netacad.com/learning-collections/javascript?courseLang=en-US)
 
 **Resources:**
-- **YouTube:** [Tamil Hacks – Vlogs](https://www.youtube.com/watch?v=WlNjBmKKpR4&list=PLxLRoiL22apK1yzX_1dWIbudoObRVKuHX)
+- **YouTube:** [Tamil Hacks - Vlogs](https://www.youtube.com/watch?v=WlNjBmKKpR4&list=PLxLRoiL22apK1yzX_1dWIbudoObRVKuHX)
 - **Websites:**
   - [Flutter.dev](https://flutter.dev/)
   - [developer.android.com](https://developer.android.com/)
@@ -163,7 +163,7 @@ Teach computers to learn from data and make decisions.
 - [SQL (Kaggle)](https://www.kaggle.com/discussions/general/425278)
 
 **Resources:**
-- **YouTube:** [Chill and Learn](https://www.youtube.com/watch?v=aiCIWGSCCKo&list=PLorkqpg7qgkw8xqc-RmuCgfCWRWCRnN-u)
+- **YouTube:** [Chill and learn](https://www.youtube.com/watch?v=aiCIWGSCCKo&list=PLorkqpg7qgkw8xqc-RmuCgfCWRWCRnN-u)
 - **Websites:**
   - [Kaggle](https://www.kaggle.com/)
   - [Coursera](https://www.coursera.org/)
@@ -377,6 +377,15 @@ Optimize your resume to pass automated screening filters.
 
 ---
 
+## Coding Games
+
+| Game | Link |
+| --- | --- |
+| Model Context | https://codingfantasy.com/games/mcp |
+| Protocol Panic | https://cssgridgarden.com/ |
+| Codingame Start | https://www.codingame.com/start/ |
+| Elevator Saga | https://play.elevatorsaga.com/ |
+
 ## Guides
 
 ### GitHub: The Home of Code
@@ -439,3 +448,42 @@ Add relevant skills (e.g., Python, Communication). Ask peers to endorse you.
 **Useful Resources**
 - [Official Guide](https://www.linkedin.com/help/linkedin/answer/a1338274)
 - [YouTube Tutorials](https://www.youtube.com/results?search_query=linkedin+profile+tips+for+students)
+
+---
+
+## Project Structure
+
+```
+DomainDetector/
+├── .env
+├── .env.example
+├── .gitignore
+├── DEPLOYMENT.md
+├── README.md
+├── debug_utf8.txt
+├── index.html
+├── package-lock.json
+├── package.json
+├── vite.config.js
+├── public/
+│   └── road_map/
+├── server/
+│   ├── index.js
+│   ├── ingest.js
+│   └── knowledge.json
+└── src/
+    ├── App.jsx
+    ├── index.css
+    ├── main.jsx
+    ├── components/
+    │   ├── ChatBot.jsx
+    │   ├── Chatbot.css
+    │   └── Navbar.jsx
+    ├── data/
+    │   └── domains.js
+    └── pages/
+        ├── DomainDetail.jsx
+        ├── GitHubGuide.jsx
+        ├── Home.jsx
+        └── LinkedInGuide.jsx
+```

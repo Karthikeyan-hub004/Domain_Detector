@@ -5,7 +5,10 @@ import Home from './pages/Home';
 import DomainDetail from './pages/DomainDetail';
 import LinkedInGuide from './pages/LinkedInGuide';
 import GitHubGuide from './pages/GitHubGuide';
+import Tutorial from './pages/Tutorial';
+import CareerQuiz from './pages/CareerQuiz';
 import ChatBot from './components/ChatBot';
+import FeedbackModal from './components/FeedbackModal';
 
 
 
@@ -16,16 +19,20 @@ function App() {
                 <Navbar />
                 <main>
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/" element={<CareerQuiz />} />
+                        <Route path="/home" element={<Home />} />
                         <Route path="/domain/:id" element={<DomainDetail />} />
                         <Route path="/linkedin-guide" element={<LinkedInGuide />} />
                         <Route path="/github-guide" element={<GitHubGuide />} />
+                        <Route path="/tutorial" element={<Tutorial />} />
+                        <Route path="/career-quiz" element={<CareerQuiz />} />
                     </Routes>
                 </main>
                 <footer className="footer">
                     <div className="container">
-                        <p>© 2025 Domain Detector. Build your future.</p>
+                        <p>© 2026 Domain Detector. Build your future. | <a href="https://myportfolio775.netlify.app/my.html" target="_blank" rel="noopener noreferrer" className="portfolio-link">My_Portfolio</a></p>
                     </div>
+                    <FeedbackModal />
                 </footer>
                 <ChatBot />
             </div>

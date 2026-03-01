@@ -17,7 +17,10 @@ export default function ChatBot() {
         setLoading(true);
 
         try {
-            const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/chat";
+            // Use localhost for development, production URL otherwise
+            const API_URL = import.meta.env.DEV 
+                ? "http://localhost:5000/chat"
+                : (import.meta.env.VITE_API_URL || "https://dk2004.onrender.com/chat");
             const res = await fetch(
                 API_URL,
                 {
