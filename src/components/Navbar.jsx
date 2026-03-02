@@ -42,7 +42,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="container nav-content">
                 <Link to="/" className="logo">
-                    <img src="/logo.png" alt="DK" className="logo-img" />
+                    <img src="/logo.svg" alt="DK" className="logo-img" />
                     <span>DomainDetector</span>
                 </Link>
                 
