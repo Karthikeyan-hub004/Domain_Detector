@@ -215,7 +215,7 @@ export default function CareerQuiz() {
       // Use localhost for development, production URL otherwise
       const API_BASE = import.meta.env.DEV 
         ? "http://localhost:5000" 
-        : (import.meta.env.VITE_API_URL?.replace("/chat", "") || "https://dk-lsdr.onrender.com");
+        : (import.meta.env.VITE_API_URL?.replace("/chat", "") || "https://dk7469.onrender.com");
       const response = await fetch(`${API_BASE}/api/career-quiz`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
