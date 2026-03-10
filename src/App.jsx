@@ -30,7 +30,17 @@ function App() {
                 </main>
                 <footer className="footer">
                     <div className="container">
-                        <p>© 2026 Domain Detector. Build your future. | <a href="https://myportfolio775.netlify.app/my.html" target="_blank" rel="noopener noreferrer" className="portfolio-link">My_Portfolio</a></p>
+                        <div className="footer-inner">
+                            <div className="footer-brand">
+                                🎯 DomainDetector
+                            </div>
+                            <p className="footer-copy">
+                                © 2026 DomainDetector &mdash; Build your future, one domain at a time.
+                            </p>
+                            <div className="footer-links">
+                                <a href="https://myportfolio775.netlify.app/my.html" target="_blank" rel="noopener noreferrer" className="portfolio-link">Portfolio</a>
+                            </div>
+                        </div>
                     </div>
                     <FeedbackModal />
                 </footer>

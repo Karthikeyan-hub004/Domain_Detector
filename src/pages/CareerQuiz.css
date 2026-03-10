@@ -1,7 +1,7 @@
 /* Career Quiz Page */
 .career-quiz {
   min-height: calc(100vh - 200px);
-  padding: 40px 20px;
+  padding: clamp(16px, 4vw, 40px) clamp(12px, 4vw, 20px);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -12,8 +12,8 @@
   width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 40px;
+  border-radius: var(--radius-lg, 20px);
+  padding: clamp(20px, 5vw, 40px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.4s ease-out;
 }
@@ -36,7 +36,7 @@
 }
 
 .quiz-header h1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   background-clip: text;
@@ -46,7 +46,7 @@
 
 .quiz-header p {
   color: var(--text-muted);
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
 }
 
 /* Progress Section */
@@ -82,7 +82,7 @@
 }
 
 .question-text {
-  font-size: 1.4rem;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
   font-weight: 600;
   color: var(--text);
   margin-bottom: 24px;
@@ -453,33 +453,46 @@
 
 /* Responsive */
 @media (max-width: 600px) {
+  .career-quiz {
+    padding: 16px 12px;
+    align-items: stretch;
+  }
+
   .quiz-container {
-    padding: 24px;
-    margin: 0 10px;
-  }
-
-  .quiz-header h1 {
-    font-size: 1.6rem;
-  }
-
-  .question-text {
-    font-size: 1.2rem;
+    padding: 20px 16px;
+    border-radius: 12px;
+    margin: 0;
   }
 
   .option-btn {
-    padding: 14px 16px;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .option-indicator {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
   }
 
   .quiz-navigation {
     flex-direction: column;
   }
 
+  .quiz-navigation .btn {
+    padding: 12px 20px;
+  }
+
   .result-domain {
     font-size: 1.5rem;
   }
 
+  .result-card {
+    padding: 20px 16px;
+  }
+
   .score-item {
-    grid-template-columns: 100px 1fr 30px;
+    grid-template-columns: 90px 1fr 28px;
   }
 
   .score-domain {
@@ -492,5 +505,25 @@
 
   .result-actions .btn {
     width: 100%;
+    text-align: center;
+  }
+
+  .alt-domains {
+    gap: 8px;
+  }
+
+  .question-indicators {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 380px) {
+  .quiz-container {
+    padding: 16px 12px;
+  }
+
+  .score-item {
+    grid-template-columns: 70px 1fr 24px;
   }
 }
